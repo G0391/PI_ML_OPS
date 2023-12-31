@@ -1,7 +1,0 @@
-﻿fastapi
-numpy
-pandas
-uvicorn
-pyarrow
-fastparquet
-scikit-learn==0.24.2
