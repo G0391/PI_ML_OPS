@@ -109,3 +109,36 @@ def sentiment_analysis( desarrolladora : str ):
     result5 = {desarrolladora: sentiment_counts}
     return result5
 
+"""## 6.Sistema de recomendacion de juegos"""
+
+modelo_recomendacion = pd.read_csv("Datasets/df_modelo_recomendacion.csv")
+
+def recomendacion_juego(id_juego):
+    try:
+        id_juego = int(id_juego)
+        juego_seleccionado = modelo_recomendacion[modelo_recomendacion["id"] == id_juego]
+        if juego_seleccionado.empty:
+            return {"error": f"El juego con el ID '{id_juego}' no se encuentra."}
+        indice_juego = juego_seleccionado.index[0]
+        muestra = 3000
+        df_muestra = modelo_recomendacion.sample(n=muestra, random_state=50)
+        juego_features = modelo_recomendacion.iloc[indice_juego, 3:]
+        muestra_features = df_muestra.iloc[:, 3:]
+        similitud = cosine_similarity([juego_features], muestra_features)[0]
+        recomendaciones = sorted(enumerate(similitud), key=lambda x: x[1], reverse=True)[:5]
+        recomendaciones_indices = [i[0] for i in recomendaciones]
+        recomendaciones_names = df_muestra["app_name"].iloc[recomendaciones_indices].tolist()
+
+        return {"Juegos_similares": recomendaciones_names}
+
+    except ValueError:
+        return {"error": "El ID del juego debe ser un número entero válido."}
+
+@app.get("/recomendar/{juego_id}")
+def obtener_recomendaciones(juego_id: int):
+    try:
+        recomendaciones = recomendacion_juego(juego_id)
+        return {"recomendaciones": recomendaciones}
+    except Exception as e:
+        return {"error": f"Error en la recomendación: {str(e)}"}
+
