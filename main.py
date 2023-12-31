@@ -10,11 +10,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 app = FastAPI()
 
 # Importamos los datos que se encuentran en formato parquet para dataframes
-df_PlayTimeGenre = pd.read_parquet("C:\Users\Germán\Desktop\PI_MLOps\PI_MLOps\Datasets\PlayTimeGenre.parquet")
-df_UserForGenre = pd.read_parquet("C:\Users\Germán\Desktop\PI_MLOps\PI_MLOps\Datasets\UsersForGenre3.parquet")
-df_UsersRecommend = pd.read_parquet("C:\Users\Germán\Desktop\PI_MLOps\PI_MLOps\Datasets\df_UsersWorstDeveloper_final.parquet")
-df_UsersWorstDeveloper = pd.read_parquet("C:\Users\Germán\Desktop\PI_MLOps\PI_MLOps\Datasets\df_UsersWorstDeveloper_final.parquet")
-df_Sentiment_Analysis = pd.read_parquet("C:\Users\Germán\Desktop\PI_MLOps\PI_MLOps\Datasets\df_Sentiment_analysis.parquet")
+df_PlayTimeGenre = pd.read_parquet("C:\\Users\\Germán\\Desktop\\\PI_MLOps\\Datasets\\PlayTimeGenre.parquet")
+df_UserForGenre = pd.read_parquet("C:\\Users\\Germán\\Desktop\\PI_MLOps\\PI_MLOps\\Datasets\\UsersForGenre3.parquet")
+df_UsersRecommend = pd.read_parquet("C:\\Users\\Germán\\Desktop\\PI_MLOps\\PI_MLOps\Datasets\\df_UsersWorstDeveloper_final.parquet")
+df_UsersWorstDeveloper = pd.read_parquet("C:\\Users\\Germán\\Desktop\\PI_MLOps\\PI_MLOps\\Datasets\\df_UsersWorstDeveloper_final.parquet")
+df_Sentiment_Analysis = pd.read_parquet("C:\\Users\\Germán\\Desktop\\PI_MLOps\\PI_MLOps\\Datasets\\df_Sentiment_analysis.parquet")
 
 """## 1.PlaytimeGenre"""
 
