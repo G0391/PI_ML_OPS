@@ -7,6 +7,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 app = FastAPI()
 
+df_PlayTimeGenre = pd.read_parquet("Datasets/df_PlayTimeGenre.parquet")
+df_UserForGenre = pd.read_parquet("Datasets/df_UsersForGenre3.parquet")
 df_UsersRecommend = pd.read_parquet("Datasets/df_UsersRecommend.parquet")
 df_UsersWorstDeveloper = pd.read_parquet("Datasets/df_UsersWorstDeveloper_final.parquet")
 df_Sentiment_Analysis = pd.read_parquet("Datasets/df_Sentiment_analysis.parquet")
