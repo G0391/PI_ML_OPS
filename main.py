@@ -39,8 +39,8 @@ def UserForGenre(genero: str):
     """
     generos2 = df_UserForGenre[df_UserForGenre["main_genre"]== genero]
     user_max = generos2.loc[generos2["playtime_hour"].idxmax()]["user_id"]
-    horas_x_año = generos2.groupby(["release_year"])["playtime_hour"].sum().reset_index()
-    horas_lista = horas_x_año.rename(columns={"release_year": "Año", "playtime_hour": "Horas"}).to_dict(orient="records")
+    horas_x_año = generos2.groupby(["year_posted"])["playtime_hour"].sum().reset_index()
+    horas_lista = horas_x_año.rename(columns={"year_posted": "Año", "playtime_hour": "Horas"}).to_dict(orient="records")
     result2 = {
         "Genero": genero,
         "Usuario con Más Horas Jugadas": user_max,
@@ -106,12 +106,12 @@ def sentiment_analysis( desarrolladora : str ):
     sentiment_counts = df_developer.groupby("sentiment_analysis")["sentiment_analysis_count"].sum().to_dict()
     sentiment_dicc = {0: "Negativo", 1: "Neutral", 2: "Positivo"}
     sentiment_counts = {sentiment_dicc[key]: value for key, value in sentiment_counts.items()}
-    result50 = {desarrolladora: sentiment_counts}
+    result5 = {desarrolladora: sentiment_counts}
     return result5
 
 """## 6.Sistema de recomendacion de juegos"""
 
-modelo_recomendacion = pd.read_csv("modelo_recomendacion.to_csv")
+modelo_recomendacion = pd.read_csv("modelo_recomendacion.csv")
 
 def recomendacion_juego(id_juego):
     try:
