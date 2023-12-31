@@ -7,9 +7,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 app = FastAPI()
 
-from google.colab import files
-uploaded = files.upload()
-
 df_Sentiment_Analysis = pd.read_parquet("df_Sentiment_analysis.parquet")
 df_UsersRecommend = pd.read_parquet("df_UsersRecommend.parquet")
 df_UsersWorstDeveloper = pd.read_parquet("df_UsersWorstDeveloper_final.parquet")
