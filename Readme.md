@@ -16,7 +16,6 @@ En este proyecto, llevamos a cabo el rol de un Ingeniero MLOps en Steam, una pla
 
 Como Científico de Datos en Steam, y detallando nuestra tarea en profundidad debemos crear un modelo de aprendizaje automático que para un sistema de recomendación de videojuegos. Recibimos los datos no procesados y en estado crudo, por lo cual debemos procesar los datos que tenemos para poder avanzar y concluir nuestra tarea. 
 
-Información del Juego en Steam:
 users_items.json: Nos brinda datos de cada uno de los juegos que han sido jugados por los usuarios y por cuanto tiempo.
 
 steam_games.json: Se refiere justamente a los juegos de Steam. Incluye datos del nombre del juego, número de identificación, año de lanzamiento, desarrollador y género. 
