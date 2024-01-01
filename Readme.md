@@ -36,10 +36,11 @@ Análisis Exploratorio de Datos (EDA):
 Se realiza ahora una exploración manual, un análisis exploratorio de los datos luego de alcanzar cada uno de los ETL. Allí investigaremos relaciones entre variables, podremos  identificar valores atípicos y hallar patrones interesantes dentro del conjunto de datos. Realizaremos análisis estadísticos y visualizaciones con gráficos para clarificar estas relaciones entre diferentes variables. "EDA"
 
 Optimización del rendimiento y espacio:
-Antes de desarrollar las funciones de la API, se llevó a cabo la creación de dataframes nuevos dataframes con la finalidad de optimizar las funciones, mejorar su rendimiento y disminuir el espacio. Finalmente, estos dataframes almacenan solo los datos fundamentales para las consultas de la API. "Dataframes Auxiliares
+Antes de desarrollar las funciones de la API, se llevó a cabo la creación de dataframes nuevos dataframes con la finalidad de optimizar las funciones, mejorar su rendimiento y disminuir el espacio. Finalmente, estos dataframes almacenan solo los datos fundamentales para las consultas de la API. "Dataframes"
 
 Desarrollo de la API:
 Utilizaremos el framework FastAPI para exponer los datos de la empresa a través de endpoints RESTful.
+
 Endpoints:
 PlayTimeGenre(genero: str): Brinda el año de lanzamiento con más horas jugadas para el género consultado.
 
