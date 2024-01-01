@@ -18,13 +18,13 @@ Como Científico de Datos en Steam, y detallando nuestra tarea en profundidad de
 
 Información del Juego en Steam:
 En el proyecto, recibimos tres archivos JSON cada uno contiene datos únicos. 
-
+<h1                                                                                                                   /h1>
 ⦁	users_items.json: Nos brinda datos de cada uno de los juegos que han sido jugados por los usuarios y por cuanto tiempo.
-
+<h1                                                                                                                   /h1>
 ⦁	steam_games.json: Se refiere justamente a los juegos de Steam. Incluye datos del nombre del juego, número de identificación, año de lanzamiento, desarrollador y género. 
-
+<h1                                                                                                                   /h1>
 ⦁	user_reviews.json: Nos brinda reseñas realizadas por los jugadores, el id de estos jugadores, el juego sobre el cual brindaron su opinión y la fecha.
-
+<h1                                                                                                                   /h1>
 <h1 align=center>Detalles sobre el trabajo</h1>
 Ingeniería de Datos:
 ⦁	Limpieza y Transformación de Datos: En el inicio, comenzamos eliminando columnas que no son necesarias para nuestra tarea. La finalidad es es optimizar el rendimiento de la API. También deberemos desanidar datos para poder llegar a limpiar algunas columnas. Esta última tarea se lleva a cabo especialmente en users_items.json y user_reviews.json aunque el trabajo de limpieza y transformación de datos se lleva a cabo se lleva en mayor o menor medida en los tres archivos JSON recibidos. Finalmente, terminamos el proceso y obtenemos 3 archivos depurados: "ETL_Steam_games.ipynb", "ETL_User_review.ipynb", "ETL_user_items.ipynb". 
