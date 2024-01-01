@@ -37,24 +37,27 @@ Optimización del rendimiento y espacio:
 Antes de desarrollar las funciones de la API, se llevó a cabo la creación de dataframes nuevos dataframes con la finalidad de optimizar las funciones, mejorar su rendimiento y disminuir el espacio. Finalmente, estos dataframes almacenan solo los datos fundamentales para las consultas de la API. "Dataframes Auxiliares
 
 Desarrollo de la API:
-Framework: Utilizar el framework FastAPI para exponer los datos de la empresa a través de endpoints RESTful.
+Utilizaremos el framework FastAPI para exponer los datos de la empresa a través de endpoints RESTful.
 Endpoints:
-⦁	PlayTimeGenre(genero: str): Brinda el año de lanzamiento con más horas jugadas para el género consultado.
+PlayTimeGenre(genero: str): Brinda el año de lanzamiento con más horas jugadas para el género consultado.
 
-⦁	UserForGenre(genero: str): Brinda el usuario con más horas jugadas para el género consultado y una lista de acumulación de horas jugadas por año.
+UserForGenre(genero: str): Brinda el usuario con más horas jugadas para el género consultado y una lista de acumulación de horas jugadas por año.
 
-⦁	UsersRecommend(año: int): Devuelve el top 3 de juegos más recomendados por usuarios para el año solicitado.
+UsersRecommend(año: int): Devuelve el top 3 de juegos más recomendados por usuarios para el año solicitado.
 
-⦁	UsersWorstDeveloper(año: int): Devuelve el top 3 de desarrolladoras con juegos menos recomendados por usuarios para el año solicitado.
+UsersWorstDeveloper(año: int): Devuelve el top 3 de desarrolladoras con juegos menos recomendados por usuarios para el año solicitado.
 
-⦁	Sentiment_analysis(empresa_desarrolladora: str): Devuelve un diccionario con el recuento de análisis de sentimiento para reseñas asociadas con el desarrollador de juegos especificado.
+Sentiment_analysis(empresa_desarrolladora: str): Devuelve un diccionario con el recuento de análisis de sentimiento para reseñas asociadas con el desarrollador de juegos especificado.
 
 Creamos la carpeta Datasets: 
 En la misma se encuentran los dataframes utilizados para cada funcion. Estos dataframes nos sirvieron para probar las funciones antes de avanzar con la ejecución de la API. 
+
 Sistema de Recomendación: 
 Implementamos un sistema de recomendación, en donde el sistema toma un item y nos recomienda cinco similares a este. Debido a los límites de memoria, utilizaremos sólo una muestra de los datos. 
+
 Render: 
 Realizamos la implementación en la nube seleccionando Render. Esta plataforma nos permite de manera sencilla dejar funcionando nuestra API en todo momento. Por lo tanto, luego de probar nuestra plataforma de manera local, deployamos nuestra API en Render, la misma se puede consultar en: https://g0391-pi-ml-ops.onrender.com
+
 Video: 
 Finalmente, en el siguiente video se puede observar una pequeña explicación del procedimiento realizado y de la API en Render. 
 
