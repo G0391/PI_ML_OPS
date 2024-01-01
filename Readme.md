@@ -8,7 +8,7 @@
 <img src="https://user-images.githubusercontent.com/67664604/217914153-1eb00e25-ac08-4dfa-aaf8-53c09038f082.png"  height=300>
 </p>
 
-¡Bienvenidos al primer proyecto individual de la etapa de labs! *.  
+*¡Bienvenidos al primer proyecto individual de la etapa de labs! *.  
 
 <hr>  
 
@@ -64,9 +64,3 @@ Tecnologías elegidas
 En el desarrollo de este proyecto, aprovechamos varias tecnologías para llevar a cabo las distintas etapas del proceso:
 Python, Pandas, Numpy, Matplotlib, Seaborn, FastAPI, Scikit-learn, Render.
 
-## **FAQ PI MLOps**
-Les acercamos un notion donde tienen respuestas a algunas preguntas básicas de la etapa:
-- https://soyhenry-data-labs.notion.site/PIMLops-FAQs-c7ca60c781e9468b8da4bd437c93412d 
-
-  
-<br/>
