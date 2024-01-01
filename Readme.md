@@ -12,13 +12,13 @@
 
 <hr>  
 
-##Proyecto MLOps de Steam##
+Proyecto MLOps de Steam
 En este proyecto, llevamos a cabo el rol de un Ingeniero MLOps en Steam, una plataforma de video juegos de nivel mundial. Nuestra tarea, crear un sistema de recomendación de videojuegos utilizando aprendizaje automático. Para ello, los datos necesitaron ser refinados y transformados para poder ser utilizados y así, desarrollar un Producto Mínimo Viable (MVP) y desplegarlo como una API RESTful.
 
-##Descripción del Problema##
+Descripción del Problema
 Como Científico de Datos en Steam, y detallando nuestra tarea en profundidad debemos crear un modelo de aprendizaje automático que para un sistema de recomendación de videojuegos. Recibimos los datos no procesados y en estado crudo, por lo cual debemos procesar los datos que tenemos para poder avanzar y concluir nuestra tarea. 
 
-##Información del Juego en Steam##
+Información del Juego en Steam
 En el proyecto, recibimos tres archivos JSON cada uno contiene datos únicos. 
 
 ⦁	users_items.json: Nos brinda datos de cada uno de los juegos que han sido jugados por los usuarios y por cuanto tiempo.
@@ -51,7 +51,7 @@ Endpoints:
 
 ⦁	Sentiment_analysis(empresa_desarrolladora: str): Devuelve un diccionario con el recuento de análisis de sentimiento para reseñas asociadas con el desarrollador de juegos especificado.
 
-##Creamos la carpeta Datasets##
+Creamos la carpeta Datasets
 En la misma se encuentran los dataframes utilizados para cada funcion. Estos dataframes nos sirvieron para probar las funciones antes de avanzar con la ejecución de la API. 
 Sistema de Recomendación
 Implementamos un sistema de recomendación, en donde el sistema toma un item y nos recomienda cinco similares a este. Debido a los límites de memoria, utilizaremos sólo una muestra de los datos. 
