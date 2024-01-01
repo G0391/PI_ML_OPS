@@ -8,8 +8,7 @@
 <img src="https://user-images.githubusercontent.com/67664604/217914153-1eb00e25-ac08-4dfa-aaf8-53c09038f082.png"  height=300>
 </p>
 
-<h1 ¡Bienvenidos al primer proyecto individual de la etapa de labs! </h1>
-
+<h1 align=center>¡Bienvenidos al primer proyecto individual de la etapa de labs! </h1>
 
 Proyecto MLOps de Steam
 En este proyecto, llevamos a cabo el rol de un Ingeniero MLOps en Steam, una plataforma de video juegos de nivel mundial. Nuestra tarea, crear un sistema de recomendación de videojuegos utilizando aprendizaje automático. Para ello, los datos necesitaron ser refinados y transformados para poder ser utilizados y así, desarrollar un Producto Mínimo Viable (MVP) y desplegarlo como una API RESTful.
