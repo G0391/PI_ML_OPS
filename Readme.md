@@ -61,8 +61,7 @@ Implementamos un sistema de recomendación, en donde el sistema toma un item y n
 Render: 
 Realizamos la implementación en la nube seleccionando Render. Esta plataforma nos permite de manera sencilla dejar funcionando nuestra API en todo momento. Por lo tanto, luego de probar nuestra plataforma de manera local, deployamos nuestra API en Render, la misma se puede consultar en: https://g0391-pi-ml-ops.onrender.com
 
-Video: 
-Finalmente, en el siguiente video se puede observar una pequeña explicación del procedimiento realizado y de la API en Render. 
+
 
 <h1 align=center>Tecnologías elegidas</h1>
 En el desarrollo de este proyecto, aprovechamos varias tecnologías para llevar a cabo las distintas etapas del proceso:
